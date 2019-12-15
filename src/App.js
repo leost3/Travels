@@ -8,8 +8,7 @@ import {
 import Users from "./user/pages/Users";
 import NewPlace from "./places/pages/Place";
 import MainNavigation from "./shared/components/Navigation/MainNavigation";
-import MainHeader from "./shared/components/Navigation/MainHeader";
-import UserPlaces from "./places/pages/UserPlaces"
+import UserPlaces from "./places/pages/UserPlaces";
 
 const App = () => {
   return (
@@ -22,7 +21,7 @@ const App = () => {
           </Route>
           <Route path="/:userId/places" exact>
             <UserPlaces />
-            </Route>
+          </Route>
           <Route path="/places/new" exact>
             <NewPlace />
           </Route>
